@@ -1,6 +1,60 @@
 body{
     display: grid;
     grid-template-areas: 
-    "felipe felipe felipe";
-    
+    "cabeça cabeça cabeça"
+     "braço corpo corpo"
+     "pé pé pé ";
+    grid-template-rows: 200px 400px 300px;
+    grid-template-columns: 200px auto auto;
+}
+header{
+    grid-area: cabeça;
+    background-color: blue;
+}
+
+aside{
+    grid-area: braço;
+    background-color: blueviolet;
+}
+
+main{
+    grid-area: corpo;
+    background-color: chartreuse;
+}
+
+footer{
+    grid-area: pé;
+    background-color: chocolate;
+}
+
+.mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border: yellow 2px solid;
+    background-color: black;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.img_card{
+  width: 300px;
+  height: auto;
+}
+
+.texto_card{
+    color: brown;
+    font-size: x-large;
+}
+
+.preço_card{
+    color: aquamarine;
+    font-size: xx-large;
 }
