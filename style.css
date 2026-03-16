@@ -4,27 +4,37 @@ body{
     "cabeça cabeça cabeça"
      "braço corpo corpo"
      "pé pé pé ";
-    grid-template-rows: 200px 400px 300px;
+    grid-template-rows: 200px auto 300px;
     grid-template-columns: 200px auto auto;
 }
 header{
     grid-area: cabeça;
-    background-color: blue;
+    background-color: rgb(7, 7, 7);
 }
 
 aside{
     grid-area: braço;
-    background-color: blueviolet;
+    background-color: rgb(239, 235, 243);
 }
 
 main{
     grid-area: corpo;
-    background-color: chartreuse;
+    background-color: rgb(205, 152, 230);
 }
 
 footer{
     grid-area: pé;
-    background-color: chocolate;
+    background-color: rgb(210, 30, 171);
+}
+
+@media only screen and(max-width: 450px){
+    body{
+        grid-template-areas: "cabeça"
+                             "corpo"
+                             "pé";
+        grid-template-columns: auto;
+        grid-template-rows: 150px 50px 500px 200px;
+    }
 }
 
 .mae{
@@ -35,7 +45,7 @@ footer{
 }
 
 .card{
-    border: yellow 2px solid;
+    border: rgb(159, 98, 187) 2px solid;
     background-color: black;
     width: 400px;
     padding: 20px;
